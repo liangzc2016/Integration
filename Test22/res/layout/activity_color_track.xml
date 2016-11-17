@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.example.test22"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    <com.example.test22.view.ColorTrackView 
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        custom:text="第一个是从左到右测试"
+        custom:text_orgin_color="#ff00ff"
+        custom:text_size="20sp"
+        custom:direction="left"/>
+    <com.example.test22.view.ColorTrackView 
+        android:id="@+id/second"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        custom:progress="0"
+        custom:text="第儿歌是从左到右测试"
+        custom:text_size="20sp"
+        custom:direction="right"/>
+    <com.example.test22.view.ColorTrackView 
+        android:id="@+id/third"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        custom:progress="0"
+        custom:text="第sange个是从右到左测试"
+        custom:text_size="20sp"
+        custom:direction="right"/>
+    <ImageView 
+        android:id="@+id/iv_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+
+</LinearLayout>

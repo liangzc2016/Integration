@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.example.test22"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.test22.MainActivity" 
+    android:background="@android:color/white">
+
+    <com.example.test22.ProgressView
+        android:id="@+id/pb1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android_custom:roundWidth="10dp"
+        android_custom:textColor="#9A32CD"
+        android_custom:textSize="18sp" />
+
+    <com.example.test22.ProgressView
+        android:id="@+id/pb2"
+        android_custom:style="fill"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/pb1"
+        android:layout_below="@+id/pb3"
+        android:layout_marginTop="54dp"
+        android_custom:roundWidth="10dp"
+        android_custom:textColor="#9A32CD"
+        android_custom:textSize="18sp" />
+
+    <com.example.test22.ProgressView
+        android:id="@+id/pb3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/pb1"
+        android:layout_below="@+id/pb1"
+        android:layout_marginTop="71dp"
+        android_custom:roundWidth="10dp"
+        android_custom:textColor="#9A32CD"
+        android_custom:textDisplayable="false"
+        android_custom:textSize="20sp" />
+
+</RelativeLayout>

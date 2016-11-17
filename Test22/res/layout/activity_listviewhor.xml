@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.test22.view.HorizontalListView
+        android:id="@+id/lv1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.example.test22.view.HorizontalListView>
+    <HorizontalScrollView 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lv1" 
+        android:fillViewport="true">
+   <!--  <com.example.test22.viewgroup.HorizontalScrollListView
+        android:id="@+id/lv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.example.test22.viewgroup.HorizontalScrollListView> -->
+     <ListView
+        android:id="@+id/lv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</HorizontalScrollView>
+</RelativeLayout>

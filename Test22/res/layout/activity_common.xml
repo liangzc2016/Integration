@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.test22.viewgroup.SlidingFinishLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sildingFinishLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddd33">
+   <FrameLayout 
+       android:id="@+id/fl_content"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+</com.example.test22.viewgroup.SlidingFinishLayout>

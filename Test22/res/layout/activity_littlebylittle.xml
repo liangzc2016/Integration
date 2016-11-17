@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+    <Button 
+        android:id="@+id/bt_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="开始"
+        android:visibility="gone"/>
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:src="@drawable/ic_launcher"/>
+    <com.example.test22.view.ChangeView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/blue"
+        android:visibility="gone"/>
+    <Button 
+        android:id="@+id/bt_test"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="水波紋"
+        android:visibility="gone"/>
+    <com.example.test22.view.SinWave
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <com.example.test22.view.HalfCircle 
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+    
+    <com.example.test22.view.Win10Loading 
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"/>"
+    <com.example.test22.view.CurveChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"/>
+    <com.example.test22.view.NetPicture
+        android:id="@+id/myNetPic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lineColor="@android:color/holo_blue_bright"
+        android:visibility="gone"/>
+    <com.example.test22.view.PercentCircle 
+        android:id="@+id/percentCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+   <!--  <com.example.test22.view.Circle2 
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_horizontal"
+        /> -->
+
+    <com.example.test22.view.NumberCircle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+    
+    <com.example.test22.view.CosAndCircle 
+        android:id="@+id/cc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="gone">
+    </com.example.test22.view.CosAndCircle>
+    
+
+</LinearLayout>

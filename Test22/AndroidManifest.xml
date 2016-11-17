@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test22"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+    <!-- 允许应用使用TYPE_SYSTEM_ALERT来打开窗口，并将窗口显示于其他应用的顶端 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 允许使用窗体覆盖在window上. -->
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" /> 
+    <uses-permission android:name="android.permission.INTERNET" />  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+    <application
+        android:name="com.example.test22.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".activity.ControlActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Default.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DragActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".view.Test_LargeImageView" />
+        <activity android:name="com.example.test22.viewgroup.folderlayout.FolderLayoutActivity" />
+        <activity android:name="com.example.test22.viewgroup.folderlayout.MoveFolderLayoutActivity" />
+        <activity android:name="com.example.test22.activity.ColorTrackViewActivity" />
+        <activity android:name="com.example.test22.activity.StickerLayoutActivity" />
+        <activity
+            android:name="com.example.test22.viewgroup.slidingmenu.SlidingActivity1"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name="com.example.test22.activity.VerticalLinearLayoutActivity" />
+        <activity android:name="com.example.test22.activity.ZoomImageActivity" />
+        <activity android:name="com.example.test22.activity.ClipImageActivity" />
+        <activity android:name="com.example.test22.activity.ShowImageActivity" />
+        <activity android:name="com.example.test22.activity.SlideCancelActivity" />
+        <activity android:name="com.example.test22.activity.AnimationActivity" />
+        <activity android:name="com.example.test22.activity.LoadingWin10" />
+        <activity android:name="com.example.test22.activity.ControlActivity2" />
+        <activity android:name="com.example.test22.activity.XBallFallActivity" />
+        <activity android:name="com.example.test22.activity.slidingfinish.SlidingFinishActiivty"/>
+        <activity android:name="com.example.test22.activity.slidingfinish.SlidingFinishChild1"
+            android:theme="@android:style/Theme.Translucent"/>
+         <activity android:name="com.example.test22.activity.ListViewHorizontal"/>
+         <activity android:name="com.example.test22.activity.LittleByLittleAct"
+            android:theme="@android:style/Theme.Translucent"
+            android:hardwareAccelerated="false"/>
+         <activity android:name="com.example.test22.activity.MemoryAnalyActivity"/>
+         <activity android:name="com.example.test22.suspendsion.SuspendActivity"
+             android:theme="@android:style/Theme.Translucent">
+              <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+         </activity>
+         <service android:name="com.example.test22.suspendsion.FloatWindowService"/>
+         <activity android:name="com.example.test22.activity.cache.PhotoWallActivity"/>
+         <activity android:name="com.example.test22.activity.TwomenuActivity"/>
+         <activity android:name="com.example.test22.activity.PopupWindowAct"/>
+    </application>
+
+</manifest>

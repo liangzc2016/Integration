@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff5f5f5">
+    <TextView 
+        android:id="@+id/tv_area"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="#ffaeaeae"
+        android:textSize="16sp"
+        android:text="广东"
+        android:gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_centerVertical="true"/>
+    <ImageView 
+        android:id="@+id/iv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/pitch"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+   <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffe4e4e4"/>
+
+</RelativeLayout>
