@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.test22.R;
@@ -15,9 +18,11 @@ import com.example.test22.activity.MyPopupWindow.MyAdapter;
 import com.example.test22.activity.MyPopupWindow.SelectCity;
 import com.example.test22.activity.MyPopupWindow.SelectDistrict;
 import com.example.test22.activity.MyPopupWindow.SelectProvince;
+import com.example.test22.view.SmileView;
 
 public class PopupWindowAct extends Activity implements OnClickListener {
-	Button bt1;
+	Button bt1,bt2,bt3;
+	SmileView smile;
 	List<String> provinces,citys,districts;
 	MyPopupWindow pop;
 	LinearLayout content;
@@ -28,8 +33,14 @@ public class PopupWindowAct extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_popupwindow);
 		bt1 = (Button)findViewById(R.id.bt1);
 		bt1.setOnClickListener(this);
+		bt2 = (Button)findViewById(R.id.bt2);
+		bt2.setOnClickListener(this);
+		bt3 = (Button)findViewById(R.id.bt3);
+		bt3.setOnClickListener(this);
+		smile = (SmileView)findViewById(R.id.smile);
 		content = (LinearLayout)findViewById(R.id.content);
 		initData();
+		change();
 	}
 	private void initData() {
 		provinces = new ArrayList<String>();
@@ -83,8 +94,19 @@ public class PopupWindowAct extends Activity implements OnClickListener {
 			bt1.setText(area);
 			pop.showPopupWindow(content);
 			break;
+		case R.id.bt2:
+			smile.setDuration(2000);
+			smile.setRepeaCount(8);
+			smile.performAnim();
+			break;
+		case R.id.bt3:
+			smile.cancelAnim();
+			break;
 		}
-		
 	}
-
+	public void change(){
+//		Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.img_test);
+//		iv.setImageBitmap(b);
+	}
+	
 }

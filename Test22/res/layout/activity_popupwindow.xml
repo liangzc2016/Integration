@@ -9,6 +9,21 @@
         android:id="@+id/bt1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="pop"/>
+        android:text="pop"
+        android:visibility="gone"/>
+    <Button 
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="start"/>
+     <Button 
+        android:id="@+id/bt3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="stop"/>
+    <com.example.test22.view.SmileView 
+        android:id="@+id/smile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
 
 </LinearLayout>
